@@ -142,6 +142,8 @@
       #Nubank {
         background-size: 100vw;
         cursor: pointer;
+    
+       
        }
    
         #Nubank h2  {
@@ -151,7 +153,46 @@
     
          }
 
-   
+         .carrousel {
+          width: 550vw;/* Define a largura do carrossel */
+          overflow: hidden;/* Oculta o estouro para que os itens do carrossel não saiam da área visível */
+           margin: 0 auto;/* Centraliza o carrossel horizontalmente */
+           position: relative;/* Posiciona o carrossel relativamente para que os botões "Anterior" e "Próximo" possam ser posicionados absolutamente em relação a ele */
+        }
+        
+        
+        .carrousel-inner {
+          display: flex;/* Define o layout dos itens do carrossel como flexbox */
+          transition: transform 0.6s ease;/* Adiciona uma transição suave ao movimento dos itens do carrossel */
+          margin: 0rem;
+        }
+        
+        
+        .carrousel-item {
+          width: 30%;/* Define a largura de cada item do carrossel */
+          height: 90vh;
+          flex: 0 0 auto;/* Define o tamanho flexível dos itens do carrossel para que eles se ajustem ao espaço disponível */
+          margin: 10px;/* Adiciona margem aos itens do carrossel */
+          background-color: #ccc;/* Define a cor de fundo dos itens do carrossel */
+          text-align: center;/* Centraliza o texto dentro dos itens do carrossel */
+          
+        }
+        
+        .carrousel-item:hover{
+          border: solid 1px black;
+          opacity: 95%;
+          cursor: pointer;
+        }
+        
+        .carrousel-item p {
+        text-align: justify;
+        padding: 10px;
+        }
+
+   .carrousel-item{
+    height: 100vw;
+    width: 100vw;
+   }
       
     
   }
