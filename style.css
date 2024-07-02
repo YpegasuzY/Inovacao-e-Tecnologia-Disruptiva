@@ -8,8 +8,7 @@
 }
 
 header {
-    /* background: rgb(151,157,172); */
-    background: linear-gradient(90deg, rgba(151,157,172,1) 0%, rgba(51,65,92,1) 76%, rgba(0,24,69,1) 100%);
+  background-color: black;
     padding: 2%;
     display: flex;
     align-items: center;
@@ -174,9 +173,9 @@ input[type=text], input[type=password] {
 
 
 .s1  {
-  padding: 2rem;
-  background-image: url('imgs/barnes-1.png');
-  opacity: 80%;
+  padding: 5em;
+  background-image: url('imgs/banner1.png');
+  opacity: 100%;
   color: #fff;
   text-align: center;
   background-size: cover;
@@ -195,10 +194,11 @@ input[type=text], input[type=password] {
 
 
 .carrousel {
-  width: 85vw;/* Define a largura do carrossel */
+  padding: 5em;
   overflow: hidden;/* Oculta o estouro para que os itens do carrossel não saiam da área visível */
    margin: 0 auto;/* Centraliza o carrossel horizontalmente */
    position: relative;/* Posiciona o carrossel relativamente para que os botões "Anterior" e "Próximo" possam ser posicionados absolutamente em relação a ele */
+   background-color: #000;
 }
 
 
@@ -211,12 +211,11 @@ input[type=text], input[type=password] {
 
 .carrousel-item {
   width: 30%;/* Define a largura de cada item do carrossel */
-  height: 90vh;
+  height: 100vh;
   flex: 0 0 auto;/* Define o tamanho flexível dos itens do carrossel para que eles se ajustem ao espaço disponível */
   margin: 10px;/* Adiciona margem aos itens do carrossel */
-  background-color: #ccc;/* Define a cor de fundo dos itens do carrossel */
+  background-color: #00076d;/* Define a cor de fundo dos itens do carrossel */
   text-align: center;/* Centraliza o texto dentro dos itens do carrossel */
-  
 }
 
 .carrousel-item:hover{
@@ -228,7 +227,9 @@ input[type=text], input[type=password] {
 .carrousel-item p {
 text-align: justify;
 padding: 10px;
+color: white;
 }
+
 .btn {
   cursor: pointer;/* Define o cursor do mouse como ponteiro para os botões "Anterior" e "Próximo" */
   position: absolute;/* Posiciona os botões "Anterior" e "Próximo" absolutamente em relação ao carrossel */
@@ -350,7 +351,7 @@ padding: 10px;
   display: block;
 }
 .rodape{
-  background: linear-gradient(90deg, rgba(151,157,172,1) 0%, rgba(51,65,92,1) 76%, rgba(0,24,69,1) 100%);
+  background-color: #000;
   padding: 2%;
 
 }
