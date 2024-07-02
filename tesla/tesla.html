@@ -4,16 +4,97 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="tesla.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Tesla</title>
     </head>
     <body>
         <header>
-
-        </header>
+            <div class="divImgHeader">
+              <img src="/imgs/logo.png" alt class="logo">
+              <h1>TechConnect</h1>
+            </div>
+            <nav class="nav">
+        
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Notícias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Negocio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre nos/Sobre.html">Sobre nós</a>
+                </li>
+              </ul>
+        
+            </nav>
+        
+            <div class="log_news">
+        
+              <button class="login btnHeader"><a href="sign_in.html"><i class="fa fa-sign-in" aria-hidden="true"> Sign
+                    in</i></a></button>
+        
+              <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+                class="btnHeader">NewsLetter</button>
+        
+              <div id="id01" class="modal">
+        
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                      title="Close Modal">&times;</span>
+                    <img src="imgs/logo.png" alt="Avatar" class="avatar">
+                  </div>
+        
+                  <div class="container">
+                    <label for="uname"><b>E-mail</b></label>
+                    <input type="text" placeholder="Digite seu e-mail que receberá a NewsLetter" name="uname" required>
+        
+                    <label for="assunto"><b>Assuntos</b></label>
+                    <!-- <input type="password" placeholder="Enter Password" name="psw" required> -->
+        
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                      <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
+                        input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                      <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
+                        input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                      <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
+                        input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                      <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
+                        input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                      <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
+                        input</label>
+                    </div>
+                    <button type="submit">Assinar</button>
+        
+                  </div>
+        
+                </form>
+              </div>
+        
+            </div>
+        
+          </header>
 
         <main>
             <div id="caixaConteudo">
-                <section>
+                <section id="s1">
+                    <h2>TESLA</h2>
                     <img src="/imgs/tesla img s1.jpeg" alt="imagem logo tesla">
                     <p>
                         A Tesla, Inc., fundada em 2003 por Martin Eberhard e
@@ -25,7 +106,7 @@
                         elétricos de alta performance, bem como por sua
                         contribuição para a popularização e aceitação global da
                         tecnologia de veículos elétricos. </p></section>
-                <section>
+                <section id="s2">
                     <img src="/imgs/img s3 tesla.jpg"
                         alt="imagem ilustrativa tesla">
                     <p> Os produtos da Tesla incluem uma linha de veículos
@@ -52,7 +133,7 @@
                         funcionalidade de seus veículos, além de explorar novas
                         oportunidades no campo da robótica e da
                         automação.</p></section>
-                <section>
+                <section id="s3">
                     <img src="/imgs/img s4 tesla.jpg" alt="imagem empresa tesla">
                     <p>Em termos de infraestrutura, a Tesla mantém uma extensa
                         rede global de supercarregadores, que são estações de
