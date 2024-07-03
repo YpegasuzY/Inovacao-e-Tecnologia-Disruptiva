@@ -19,7 +19,7 @@ const itens = document.querySelectorAll('.carrousel-item');
 const totalItens = itens.length;
 
 // Define quantos itens devem ser visíveis ao mesmo tempo no carrossel
-let visibleItens = 1;
+let visibleItens = 3;
 
 // Calcula o índice máximo que pode ser alcançado sem ultrapassar os limites do carrossel
 let maxIndex = totalItens - visibleItens;
