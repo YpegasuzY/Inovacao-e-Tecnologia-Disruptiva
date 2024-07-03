@@ -246,18 +246,21 @@ color: white;
   font-size: 30px;/* Define o tamanho da fonte dos botões "Anterior" e "Próximo" */
 }
 .btn:hover{
-  background-color: rgba(128, 128, 128, 0.473);
+  background-color: rgba(136, 162, 218, 0.473);
+  color: rgb(75, 186, 194);
 }
 /* Posiciona o botão "Anterior" à esquerda do carrossel */
 .btn-prev {
   left: 1%;
   padding: 1px 12px;
+  color: white;
 }
 
 /* Posiciona o botão "Próximo" à direita do carrossel */
 .btn-next {
   right: 1%;
   padding: 1px 12px;
+  color: white;
 }
 
 

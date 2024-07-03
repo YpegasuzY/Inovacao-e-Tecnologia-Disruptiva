@@ -196,4 +196,21 @@
       
     
   }
+
+
+  @media screen and (min-width: 1920px){
+
+    .carrousel-item{
+      height: 60vh;
+    }
+
+.carrousel-item img{
+  width: 100%;
+  height: 60%;
+}
+
+
+
+
+  }
   
