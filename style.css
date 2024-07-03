@@ -250,6 +250,16 @@ color: white;
   background-color: rgba(136, 162, 218, 0.473);
   color: rgb(75, 186, 194);
 }
+
+.btn55{
+  background-color: rgba(0, 0, 118, 0.27);
+  border-radius: 5px;
+  padding: 20px;
+}
+.btn55:hover{
+  background-color: rgba(128, 128, 128, 0.573);
+  border: solid 1px rgba(39, 39, 193, 0.452);
+}
 /* Posiciona o botão "Anterior" à esquerda do carrossel */
 .btn-prev {
   left: 1%;
