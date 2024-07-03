@@ -8,16 +8,16 @@
 <body>
 
 <header>
-    <h1>Cadastro de clientes | Empório Padaria</h1>
+    <h1>Cadastro de clientes | TechConnect</h1>
 </header>
 
 <main class="text">
 <?php
 $nome = $_GET["nome"];
 $email = $_GET["email"];
-$mensagem = $GET["mensagem"];
+$mensagem = $_GET["mensagem"];
 
-echo "<p>É um prazer te conhecer, a Empório Padaria agradece $nome! Entraremos em contato com você!</p>";
+echo '<p>É um prazer te conhecer, a TechConnect agradece $nome! Entraremos em contato com você!</p>';
 ?>
 <button class="text-js">
     <a href="javascript:history.go(-1)">Voltar para página anterior</a>
