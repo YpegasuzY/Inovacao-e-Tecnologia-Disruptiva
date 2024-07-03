@@ -1,206 +1,252 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  background-color: black;
-    padding: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+background-color: black;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 header img{
-  width: 9vw;
-  margin-left: 20px;
+width: 9vw;
+margin-left: 20px;
 }
 header a{
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
+display: flex;
+align-items: center;
+color: white;
+text-decoration: none;
 }
 .divImgHeader{
-  display: flex;
-  gap: 5px;
-  align-items: center;
+display: flex;
+gap: 5px;
+align-items: center;
 }
 .log_news {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+display: flex;
+align-items: center;
+gap: 1rem;
 }
 
 .fa {
-  font-size: 1.2rem;
-  color: #fff;
+font-size: 1.2rem;
+color: #fff;
 }
 
 
 .nav-link {
-  color: #fff;
+color: #fff;
 }
 
 input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 .btnHeader {
-    background: rgb(151,157,172);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
+  background: rgb(151,157,172);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
   
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Extra styles for the cancel button */
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  /* Center the image and position the close button */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-  }
-  
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
-  .container {
-    padding: 16px;
-  }
-  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
   span.psw {
-    float: right;
-    padding-top: 16px;
+     display: block;
+     float: none;
   }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+  .cancelbtn {
+     width: 100%;
   }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button (x) */
-  .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: red;
-    cursor: pointer;
-  }
-  
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-  }
-    
-  @keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-  }
+}
 
-  .avatar {
-    max-width: 15%;
-    max-height: 15%;
-  }
+.avatar {
+  max-width: 15%;
+  max-height: 15%;
+}
 
-  .btn-group {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    overflow: auto;
-    border-radius: 0%;
-  }
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  border-radius: 0%;
+}
 
+main {
+  padding: 0 12vw;
+  background: url(/imgs/imgfundoPags.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
+#caixaConteudo {
+  background-color: rgba(255, 255, 255, 0.92);
+  width: 75vw;
+  box-shadow: 1px 1px 10px gray;
+}
 
+#s1 {
+  text-align: justify;
+  padding: 5rem;
+  padding-bottom: 0;
+}
 
+#s1 h2 {
+  text-align: center;
+  text-decoration: underline;
+  font: 800;
+  font-size: 3rem;
+}
 
+#s1 img {
+  width: 30vw;
+  height: auto;
+  margin: 20px 27%;
 
+}
 
+#s2 {
+  text-align: justify;
+  padding: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 0;
+}
 
+#s2 img {
+  width: 35vw;
+  height: auto;
+  margin: 20px 23%;
+}
 
+#s3 {
+  text-align: justify;
+  padding: 5rem;
+  padding-top: 2.5rem;
+}
 
+#s3 img {
+  width: 50vw;
+  height: auto;
+  margin: 20px 12%;
+}
 
+.rodape{
+  background-color: #000;
+  padding: 2%;
 
+}
+.rodape ul{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  list-style: none;
+}
+.rodape a{
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
 
-
-
-  .rodape{
-    background-color: #000;
-    padding: 2%;
-  
-  }
-  .rodape ul{
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    list-style: none;
-  }
-  .rodape a{
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
-  }

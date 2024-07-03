@@ -1,132 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="nubank.css">
-</head>
-<body>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nubank.css">
+  </head>
+  <body>
     <header>
-        <div class="divImgHeader">
-          <a href="/index.html"><img src="/imgs/logo.png" alt class="logo">
-            <h1>TechConnect</h1></a>
-        </div>
-        <nav class="nav">
-  
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Notícias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Negocio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/sobre nos/Sobre.html">Sobre nós</a>
-            </li>
-          </ul>
-  
-        </nav>
-  
-        <div class="log_news">
-  
-          <button class="login btnHeader"><a href="/sign_in.html"><i
-                class="fa fa-sign-in" aria-hidden="true"> Sign
-                in</i></a></button>
-  
-          <button onclick="document.getElementById('id01').style.display='block'"
-            style="width:auto;"
-            class="btnHeader">NewsLetter</button>
-  
-          <div id="id01" class="modal">
-  
-            <form class="modal-content animate" action="/action_page.php"
-              method="post">
-              <div class="imgcontainer">
-                <span
-                  onclick="document.getElementById('id01').style.display='none'"
-                  class="close"
-                  title="Close Modal">&times;</span>
-                <img src="/imgs/logo.png" alt="Avatar" class="avatar">
+      <div class="divImgHeader">
+        <a href="/index.html"><img src="/imgs/logo.png" alt class="logo">
+          <h1>TechConnect</h1></a>
+      </div>
+      <nav class="nav">
+
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Notícias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Negocio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sobre nos/Sobre.html">Sobre nós</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="log_news">
+
+        <button class="login btnHeader"><a href="/sign_in.html"><i
+              class="fa fa-sign-in" aria-hidden="true"> Sign
+              in</i></a></button>
+
+        <button onclick="document.getElementById('id01').style.display='block'"
+          style="width:auto;"
+          class="btnHeader">NewsLetter</button>
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" action="/action_page.php"
+            method="post">
+            <div class="imgcontainer">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close"
+                title="Close Modal">&times;</span>
+              <img src="/imgs/logo.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+              <label for="uname"><b>E-mail</b></label>
+              <input type="text"
+                placeholder="Digite seu e-mail que receberá a NewsLetter"
+                name="uname" required>
+
+              <label for="assunto"><b>Assuntos</b></label>
+              <!-- <input type="password" placeholder="Enter Password" name="psw" required> -->
+
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox"
+                  id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label"
+                  for="flexSwitchCheckChecked">Checked switch checkbox
+                  input</label>
               </div>
-  
-              <div class="container">
-                <label for="uname"><b>E-mail</b></label>
-                <input type="text"
-                  placeholder="Digite seu e-mail que receberá a NewsLetter"
-                  name="uname" required>
-  
-                <label for="assunto"><b>Assuntos</b></label>
-                <!-- <input type="password" placeholder="Enter Password" name="psw" required> -->
-  
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox"
-                    id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label"
-                    for="flexSwitchCheckChecked">Checked switch checkbox
-                    input</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox"
-                    id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label"
-                    for="flexSwitchCheckChecked">Checked switch checkbox
-                    input</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox"
-                    id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label"
-                    for="flexSwitchCheckChecked">Checked switch checkbox
-                    input</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox"
-                    id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label"
-                    for="flexSwitchCheckChecked">Checked switch checkbox
-                    input</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox"
-                    id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label"
-                    for="flexSwitchCheckChecked">Checked switch checkbox
-                    input</label>
-                </div>
-                <button type="submit">Assinar</button>
-  
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox"
+                  id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label"
+                  for="flexSwitchCheckChecked">Checked switch checkbox
+                  input</label>
               </div>
-  
-            </form>
-          </div>
-  
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox"
+                  id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label"
+                  for="flexSwitchCheckChecked">Checked switch checkbox
+                  input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox"
+                  id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label"
+                  for="flexSwitchCheckChecked">Checked switch checkbox
+                  input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox"
+                  id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label"
+                  for="flexSwitchCheckChecked">Checked switch checkbox
+                  input</label>
+              </div>
+              <button type="submit">Assinar</button>
+
+            </div>
+
+          </form>
         </div>
-  
-      </header>
 
+      </div>
 
+    </header>
 
-      O Nubank é uma das fintechs mais proeminentes e inovadoras do setor financeiro brasileiro, fundada em 2013 por David Vélez, Cristina Junqueira e Edward Wible. A empresa se destaca por oferecer serviços bancários simplificados e acessíveis através de uma plataforma digital que visa revolucionar a experiência bancária tradicional.
+    <main>
+      <div id="caixaConteudo">
+        <section id="s1">
+          <h2>NUBANK</h2>
+          <img src="banner1-nu.jpg" alt="imagem cartões Nubank">
+          <p>
+            O Nubank é uma das fintechs mais proeminentes e inovadoras do setor
+            financeiro brasileiro, fundada em 2013 por David Vélez, Cristina
+            Junqueira e Edward Wible. A empresa se destaca por oferecer serviços
+            bancários simplificados e acessíveis através de uma plataforma
+            digital que visa revolucionar a experiência bancária tradicional.
+          </p>
+          <p>
+            Inicialmente, o Nubank lançou seu cartão de crédito sem anuidade, o
+            "Nubank Card", que rapidamente ganhou popularidade devido à sua
+            simplicidade na solicitação, gestão e ausência de tarifas ocultas
+            comuns em bancos convencionais. A proposta inicial do Nubank foi
+            desafiar o status quo bancário, oferecendo transparência,
+            conveniência e atendimento ao cliente de alta qualidade através de
+            canais digitais.</p></section>
+        <section id="s2">
+          <img src="banner2-nu.jpg" alt="App Nubank">
 
-Inicialmente, o Nubank lançou seu cartão de crédito sem anuidade, o "Nubank Card", que rapidamente ganhou popularidade devido à sua simplicidade na solicitação, gestão e ausência de tarifas ocultas comuns em bancos convencionais. A proposta inicial do Nubank foi desafiar o status quo bancário, oferecendo transparência, conveniência e atendimento ao cliente de alta qualidade através de canais digitais.
+          <p>
+            Além do cartão de crédito, o Nubank expandiu seu portfólio para
+            incluir uma conta digital completa, a "NuConta", que oferece
+            funcionalidades como pagamento de contas, transferências, depósitos
+            e rendimento automático sobre o saldo. A NuConta também não cobra
+            tarifas de manutenção e permite aos usuários controlar suas finanças
+            diretamente pelo aplicativo móvel.
+          </p>
 
-Além do cartão de crédito, o Nubank expandiu seu portfólio para incluir uma conta digital completa, a "NuConta", que oferece funcionalidades como pagamento de contas, transferências, depósitos e rendimento automático sobre o saldo. A NuConta também não cobra tarifas de manutenção e permite aos usuários controlar suas finanças diretamente pelo aplicativo móvel.
+          <p>
+            O propósito central do Nubank é democratizar o acesso aos serviços
+            financeiros no Brasil, especialmente focando em uma população que
+            historicamente enfrenta barreiras de acesso aos bancos tradicionais.
+            A empresa utiliza tecnologia de ponta para oferecer uma experiência
+            simples e segura, buscando eliminar burocracias e reduzir custos
+            operacionais para beneficiar seus clientes.
+          </p>
+        </section>
+        <section id="s3">
+          <img src="banner3-nu.jpg" alt="imagem app e cartão nubank">
+          <p>Com uma abordagem centrada no cliente, o Nubank investe
+            continuamente em inovação e melhoria de seus produtos e serviços. A
+            empresa também se destaca por sua cultura organizacional única, que
+            promove a diversidade, a inclusão e a transparência tanto
+            internamente quanto nas relações com seus clientes.</p>
 
-O propósito central do Nubank é democratizar o acesso aos serviços financeiros no Brasil, especialmente focando em uma população que historicamente enfrenta barreiras de acesso aos bancos tradicionais. A empresa utiliza tecnologia de ponta para oferecer uma experiência simples e segura, buscando eliminar burocracias e reduzir custos operacionais para beneficiar seus clientes.
+          <p>
+            Ao longo dos anos, o Nubank expandiu suas operações para além das
+            fronteiras do Brasil, lançando serviços no México e na Argentina.
+            Essa expansão internacional reflete o sucesso do modelo de negócios
+            da empresa e sua capacidade de adaptar-se às diferentes realidades
+            do mercado financeiro em diferentes países da América Latina.</p>
 
-Com uma abordagem centrada no cliente, o Nubank investe continuamente em inovação e melhoria de seus produtos e serviços. A empresa também se destaca por sua cultura organizacional única, que promove a diversidade, a inclusão e a transparência tanto internamente quanto nas relações com seus clientes.
+          <p>
+            Em suma, o Nubank não é apenas uma fintech, mas uma empresa que está
+            redefinindo o conceito de bancos digitais ao oferecer serviços
+            financeiros acessíveis, transparentes e eficientes através de uma
+            plataforma tecnologicamente avançada. Com uma visão clara de
+            transformar a indústria bancária, o Nubank continua a inovar e a
+            expandir suas operações, mantendo-se na vanguarda da revolução
+            digital no setor financeiro.
+          </p>
+        </section>
+      </div>
 
-Ao longo dos anos, o Nubank expandiu suas operações para além das fronteiras do Brasil, lançando serviços no México e na Argentina. Essa expansão internacional reflete o sucesso do modelo de negócios da empresa e sua capacidade de adaptar-se às diferentes realidades do mercado financeiro em diferentes países da América Latina.
+    </main>
 
-Em suma, o Nubank não é apenas uma fintech, mas uma empresa que está redefinindo o conceito de bancos digitais ao oferecer serviços financeiros acessíveis, transparentes e eficientes através de uma plataforma tecnologicamente avançada. Com uma visão clara de transformar a indústria bancária, o Nubank continua a inovar e a expandir suas operações, mantendo-se na vanguarda da revolução digital no setor financeiro.
-
-
-
-
-</body>
+  </body>
 </html>
