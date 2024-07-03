@@ -29,6 +29,17 @@ header a{
   gap: 5px;
   align-items: center;
 }
+
+.btnHeader {
+  background: rgb(1, 40, 139);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em; 
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
 .log_news {
   display: flex;
   align-items: center;
