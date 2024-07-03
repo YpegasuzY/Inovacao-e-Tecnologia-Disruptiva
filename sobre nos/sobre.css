@@ -250,6 +250,13 @@ border-radius: 10;
 }
 
 
-@media screen and () {
-  
+@media screen and (max-width: 1160px) {
+  #s2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #s2 iframe{
+    margin-left: -3vw ;
+  }
 }
