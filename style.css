@@ -18,7 +18,12 @@ header img{
   width: 9vw;
   margin-left: 20px;
 }
-
+header a{
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
 .divImgHeader{
   display: flex;
   gap: 5px;

@@ -1,13 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    /* background: rgb(151,157,172); */
-    background: linear-gradient(90deg, rgba(151,157,172,1) 0%, rgba(51,65,92,1) 76%, rgba(0,24,69,1) 100%);
+  background-color: black;
     padding: 2%;
     display: flex;
     align-items: center;
@@ -17,7 +16,12 @@ header img{
   width: 9vw;
   margin-left: 20px;
 }
-
+header a{
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
 .divImgHeader{
   display: flex;
   gap: 5px;
@@ -145,84 +149,106 @@ input[type=text], input[type=password] {
     to {transform: scale(1)}
   }
   
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
   }
 
-  .avatar {
-    max-width: 15%;
-    max-height: 15%;
+  .cancelbtn {
+    width: 100%;
   }
+}
 
-  .btn-group {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    overflow: auto;
-    border-radius: 0%;
-  }
+.avatar {
+  max-width: 15%;
+  max-height: 15%;
+}
 
-  main{
-    padding: 0 12vw;
-    background:url(/imgs/imgfundoPags.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  #caixaConteudo{
-    background-color: rgba(255, 255, 255, 0.92);
-    width: 75vw;
-    box-shadow: 1px 1px 10px gray;
-  }
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  border-radius: 0%;
+}
 
-  #s1{
-    text-align: justify;
-    padding: 5rem;
-    padding-bottom: 0;
-  }
+main {
+  padding: 0 12vw;
+  background: url(/imgs/imgfundoPags.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-  #s1 h2{
-    text-align: center;
-    text-decoration: underline;
-    font: 800;
-    font-size: 3rem;
-  }
+#caixaConteudo {
+  background-color: rgba(255, 255, 255, 0.92);
+  width: 75vw;
+  box-shadow: 1px 1px 10px gray;
+}
 
-  #s1 img{
-    width: 30vw;
-    height: auto;
-    margin: 20px 27%;
-    
-  }
+#s1 {
+  text-align: justify;
+  padding: 5rem;
+  padding-bottom: 0;
+}
 
-  #s2{
-    text-align: justify;
-    padding: 5rem;
-    padding-bottom: 0;
-  }
+#s1 h2 {
+  text-align: center;
+  text-decoration: underline;
+  font: 800;
+  font-size: 3rem;
+}
 
-  #s2 img{
-    width: 50vw;
-    height: auto;
-    margin: 20px 12%;
-  }
+#s1 img {
+  width: 30vw;
+  height: auto;
+  margin: 20px 27%;
 
-  #s3{
-    text-align: justify;
-    padding: 5rem;
-  }
+}
 
-  #s3 img{
-    width: 50vw;
-    height: auto;
-    margin: 20px 12%;
-  }
+#s2 {
+  text-align: justify;
+  padding: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 0;
+}
+
+#s2 img {
+  width: 50vw;
+  height: auto;
+  margin: 20px 12%;
+}
+
+#s3 {
+  text-align: justify;
+  padding: 5rem;
+  padding-top: 2.5rem;
+}
+
+#s3 img {
+  width: 50vw;
+  height: auto;
+  margin: 20px 12%;
+}
+
+.rodape {
+  background-color: #000;
+  padding: 2%;
+
+}
+
+.rodape ul {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  list-style: none;
+}
+
+.rodape a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
